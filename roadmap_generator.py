@@ -10,7 +10,7 @@ if "response_text" not in st.session_state:
     st.session_state.response_text = ''
 
 # Configure the API key
-genai.configure(api_key='AIzaSyBYiBR0hyxwtZb4KcEBUcyCfJehMA-7fiw')
+genai.configure(api_key='add your API key')
 
 # Model setup
 model_list = ['gemini-1.5-flash', 'gemini-1.5-pro', 'gemini-2.0-flash-exp']
@@ -65,6 +65,7 @@ if save_as_md:
 if reset:
     st.session_state.response_text = ''
     st.success('Reset Successful!')
+
 
 
 
